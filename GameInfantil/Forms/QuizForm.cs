@@ -67,6 +67,32 @@ namespace GameInfantil.Forms
                 }
             });
 
+            _quizQuestions.Add(new QuizQuestion
+            {
+                Answered = false,
+                Question = "Quando vejo uma situação de incêndio ou uma área com fogo, o quê devo fazer?",
+                Option1 = new QuizAnswer
+                {
+                    Text = "Pedir ajuda para um adulto.",
+                    IsCorrect = true
+                },
+                Option2 = new QuizAnswer
+                {
+                    Text = "Agir sozinho e tentar apagar o fogo",
+                    IsCorrect = false
+                },
+                Option3 = new QuizAnswer
+                {
+                    Text = "Se aproximar mais para olhar o fogo",
+                    IsCorrect = false
+                },
+                Option4 = new QuizAnswer
+                {
+                    Text = "Chamar meu animal de estimação",
+                    IsCorrect = false
+                }
+            });
+
             GetQuestion();
         }
 
