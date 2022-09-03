@@ -11,5 +11,11 @@ namespace GameInfantil
         {
 
         }
+
+        // leva para a tela de escolher o tipo de jogo
+        private void ButtonChooseGame_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
