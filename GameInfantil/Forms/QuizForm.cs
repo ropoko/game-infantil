@@ -6,7 +6,7 @@ namespace GameInfantil.Forms
     {
         private int _actualQuestion = 0;
 
-        private List<QuizQuestion> _quizQuestions = new();
+        private readonly List<QuizQuestion> _quizQuestions = new();
 
         public QuizForm()
         {
@@ -104,7 +104,20 @@ namespace GameInfantil.Forms
 
         private void GetQuestion()
         {
-            this.LabelQuestion.Text = _quizQuestions[_actualQuestion].Question;
+            if (_quizQuestions.Count == _actualQuestion)
+                HandleFinishQuiz();
+
+            LabelQuestion.Text = _quizQuestions[_actualQuestion].Question;
+
+            Option1.Text = _quizQuestions[_actualQuestion].Option1?.Text;
+            Option2.Text = _quizQuestions[_actualQuestion].Option2?.Text;
+            Option3.Text = _quizQuestions[_actualQuestion].Option3?.Text;
+            Option4.Text = _quizQuestions[_actualQuestion].Option4?.Text;
+        }
+
+        private void HandleFinishQuiz()
+        {
+
         }
     }
 }
