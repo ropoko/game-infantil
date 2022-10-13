@@ -1,14 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-
-namespace GameInfantil.Forms
+﻿namespace GameInfantil.Forms
 {
     public partial class ChooseGameForm : Form
     {
@@ -17,7 +7,6 @@ namespace GameInfantil.Forms
             InitializeComponent();
         }
 
-        // abre a tela de quiz
         private void ButtonQuizGame_Click(object sender, EventArgs e)
         {
             Hide();
@@ -26,10 +15,12 @@ namespace GameInfantil.Forms
             quiz.Show();
         }
 
-        // abre a tela do jogo da memória
         private void ButtonMemoryGame_Click(object sender, EventArgs e)
         {
+            Hide();
 
+            var memoryGame = new MemoryGameForm();
+            memoryGame.Show();
         }
     }
 }
