@@ -34,6 +34,8 @@
             this.Option3 = new System.Windows.Forms.RadioButton();
             this.Option4 = new System.Windows.Forms.RadioButton();
             this.ButtonNextQuestion = new System.Windows.Forms.Button();
+            this.ButtonHome = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.ButtonHome)).BeginInit();
             this.SuspendLayout();
             // 
             // LabelQuestion
@@ -99,11 +101,22 @@
             this.ButtonNextQuestion.UseVisualStyleBackColor = true;
             this.ButtonNextQuestion.Click += new System.EventHandler(this.ButtonNextQuestion_Click);
             // 
+            // ButtonHome
+            // 
+            this.ButtonHome.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ButtonHome.Location = new System.Drawing.Point(12, 12);
+            this.ButtonHome.Name = "ButtonHome";
+            this.ButtonHome.Size = new System.Drawing.Size(30, 30);
+            this.ButtonHome.TabIndex = 6;
+            this.ButtonHome.TabStop = false;
+            this.ButtonHome.Click += new System.EventHandler(this.ButtonHome_Click);
+            // 
             // QuizForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(684, 406);
+            this.Controls.Add(this.ButtonHome);
             this.Controls.Add(this.ButtonNextQuestion);
             this.Controls.Add(this.Option4);
             this.Controls.Add(this.Option3);
@@ -113,6 +126,7 @@
             this.Name = "QuizForm";
             this.Text = "QuizForm";
             this.Load += new System.EventHandler(this.QuizForm_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.ButtonHome)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -126,5 +140,6 @@
         private RadioButton Option3;
         private RadioButton Option4;
         private Button ButtonNextQuestion;
+        private PictureBox ButtonHome;
     }
 }

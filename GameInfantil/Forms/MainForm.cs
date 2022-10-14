@@ -9,7 +9,6 @@ namespace GameInfantil
             InitializeComponent();
         }
 
-        // leva para a tela de escolher o tipo de jogo
         private void ButtonChooseGame_Click(object sender, EventArgs e)
         {
             Hide();
@@ -18,14 +17,17 @@ namespace GameInfantil
             chooseGame.Show();
         }
 
-        // leva para a tela de "como jogar?"
         private void ButtonHowToPlay_Click(object sender, EventArgs e)
         {
         }
 
-        // leva para a tela da descrição do projeto
         private void ButtonAbout_Click(object sender, EventArgs e)
         {
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            BackgroundImage = Image.FromFile($"{AppContext.BaseDirectory}/Assets/background.png");
         }
     }
 }

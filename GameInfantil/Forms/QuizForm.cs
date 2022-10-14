@@ -17,6 +17,9 @@ namespace GameInfantil.Forms
         private void QuizForm_Load(object sender, EventArgs e)
         {
             GetQuestion();
+
+            ButtonHome.Image = Image.FromFile($"{AppContext.BaseDirectory}/Assets/home.png");
+            ButtonHome.SizeMode = PictureBoxSizeMode.StretchImage;
         }
 
         private void ButtonNextQuestion_Click(object sender, EventArgs e)
@@ -41,6 +44,14 @@ namespace GameInfantil.Forms
         private void HandleFinishQuiz()
         {
             return;
+        }
+
+        private void ButtonHome_Click(object sender, EventArgs e)
+        {
+            Hide();
+
+            var main = new MainForm();
+            main.Show();
         }
     }
 }
