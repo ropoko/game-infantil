@@ -64,6 +64,7 @@
             this.Card2.Size = new System.Drawing.Size(143, 136);
             this.Card2.TabIndex = 1;
             this.Card2.TabStop = false;
+            this.Card2.Click += new System.EventHandler(this.FlipCard);
             // 
             // Card4
             // 
@@ -72,6 +73,7 @@
             this.Card4.Size = new System.Drawing.Size(143, 136);
             this.Card4.TabIndex = 2;
             this.Card4.TabStop = false;
+            this.Card4.Click += new System.EventHandler(this.FlipCard);
             // 
             // Card3
             // 
@@ -80,6 +82,7 @@
             this.Card3.Size = new System.Drawing.Size(143, 136);
             this.Card3.TabIndex = 3;
             this.Card3.TabStop = false;
+            this.Card3.Click += new System.EventHandler(this.FlipCard);
             // 
             // Card7
             // 
@@ -88,6 +91,7 @@
             this.Card7.Size = new System.Drawing.Size(143, 136);
             this.Card7.TabIndex = 7;
             this.Card7.TabStop = false;
+            this.Card7.Click += new System.EventHandler(this.FlipCard);
             // 
             // Card8
             // 
@@ -96,6 +100,7 @@
             this.Card8.Size = new System.Drawing.Size(143, 136);
             this.Card8.TabIndex = 6;
             this.Card8.TabStop = false;
+            this.Card8.Click += new System.EventHandler(this.FlipCard);
             // 
             // Card6
             // 
@@ -104,6 +109,7 @@
             this.Card6.Size = new System.Drawing.Size(143, 136);
             this.Card6.TabIndex = 5;
             this.Card6.TabStop = false;
+            this.Card6.Click += new System.EventHandler(this.FlipCard);
             // 
             // Card5
             // 
@@ -112,6 +118,7 @@
             this.Card5.Size = new System.Drawing.Size(143, 136);
             this.Card5.TabIndex = 4;
             this.Card5.TabStop = false;
+            this.Card5.Click += new System.EventHandler(this.FlipCard);
             // 
             // label1
             // 

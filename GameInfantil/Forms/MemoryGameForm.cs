@@ -1,5 +1,4 @@
 ﻿using GameInfantil.Models;
-using System;
 
 namespace GameInfantil.Forms
 {
@@ -7,7 +6,9 @@ namespace GameInfantil.Forms
     {
         private readonly List<PictureBox> _cards;
 
-        private readonly string _defaultImage = "/Assets/default.png";
+        private readonly string _defaultImage = $"{AppContext.BaseDirectory}/Assets/default.png";
+
+        private int cardsFlipped = 0;
 
         public MemoryGameForm()
         {
@@ -42,7 +43,7 @@ namespace GameInfantil.Forms
 
                 card.InitialImage = Image.FromFile($"{basePath}{image.Url}");
 
-                card.Image = Image.FromFile($"{basePath}{_defaultImage}");
+                card.Image = Image.FromFile(_defaultImage);
                 card.SizeMode = PictureBoxSizeMode.StretchImage;
             });
         }
@@ -58,9 +59,15 @@ namespace GameInfantil.Forms
             var image = (PictureBox)sender;
 
             if (image.Image == image.InitialImage)
-                image.Image = Image.FromFile("");
+            {
+                image.Image = Image.FromFile(_defaultImage);
+                cardsFlipped++;
+            }
             else
+            {
                 image.Image = image.InitialImage;
+                cardsFlipped--;
+            }
         }
     }
 }
