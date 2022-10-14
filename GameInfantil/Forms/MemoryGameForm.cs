@@ -1,42 +1,66 @@
-﻿using System;
+﻿using GameInfantil.Models;
+using System;
 
 namespace GameInfantil.Forms
 {
     public partial class MemoryGameForm : Form
     {
+        private readonly List<PictureBox> _cards;
+
+        private readonly string _defaultImage = "/Assets/default.png";
+
         public MemoryGameForm()
         {
             InitializeComponent();
+
+            _cards = new List<PictureBox>()
+            {
+                Card1,
+                Card2,
+                Card3,
+                Card4,
+                Card5,
+                Card6,
+                Card7,
+                Card8
+            };
+        }
+
+        private void SetDefaultImage()
+        {
+            string basePath = AppContext.BaseDirectory;
+
+            var randImage = new Random();
+
+            var images = Images.GetImages();
+
+            _cards.ForEach((card) =>
+            {
+                int n = randImage.Next(1, 4);
+
+                var image = images.First(i => i.Id == n);
+
+                card.InitialImage = Image.FromFile($"{basePath}{image.Url}");
+
+                card.Image = Image.FromFile($"{basePath}{_defaultImage}");
+                card.SizeMode = PictureBoxSizeMode.StretchImage;
+            });
         }
 
         // Adiciona imagens padrão
         private void MemoryGameForm_Load(object sender, EventArgs e)
         {
-            string basePath = AppContext.BaseDirectory;
+            SetDefaultImage();
+        }
 
-            Card1.Image = Image.FromFile($"{basePath}/Assets/default.png");
-            Card1.SizeMode = PictureBoxSizeMode.StretchImage;
+        private void FlipCard(object sender, EventArgs e)
+        {
+            var image = (PictureBox)sender;
 
-            Card2.Image = Image.FromFile($"{basePath}/Assets/default.png");
-            Card2.SizeMode = PictureBoxSizeMode.StretchImage;
-
-            Card3.Image = Image.FromFile($"{basePath}/Assets/default.png");
-            Card3.SizeMode = PictureBoxSizeMode.StretchImage;
-
-            Card4.Image = Image.FromFile($"{basePath}/Assets/default.png");
-            Card4.SizeMode = PictureBoxSizeMode.StretchImage;
-
-            Card5.Image = Image.FromFile($"{basePath}/Assets/default.png");
-            Card5.SizeMode = PictureBoxSizeMode.StretchImage;
-
-            Card6.Image = Image.FromFile($"{basePath}/Assets/default.png");
-            Card6.SizeMode = PictureBoxSizeMode.StretchImage;
-            
-            Card7.Image = Image.FromFile($"{basePath}/Assets/default.png");
-            Card7.SizeMode = PictureBoxSizeMode.StretchImage;
-            
-            Card8.Image = Image.FromFile($"{basePath}/Assets/default.png");
-            Card8.SizeMode = PictureBoxSizeMode.StretchImage;
+            if (image.Image == image.InitialImage)
+                image.Image = Image.FromFile("");
+            else
+                image.Image = image.InitialImage;
         }
     }
 }

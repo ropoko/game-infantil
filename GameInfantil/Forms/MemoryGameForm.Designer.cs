@@ -55,6 +55,7 @@
             this.Card1.Size = new System.Drawing.Size(143, 136);
             this.Card1.TabIndex = 0;
             this.Card1.TabStop = false;
+            this.Card1.Click += new System.EventHandler(this.FlipCard);
             // 
             // Card2
             // 
