@@ -48,7 +48,7 @@ namespace GameInfantil.Forms
             });
         }
 
-        // Adiciona imagens padrão
+        // Add default images
         private void MemoryGameForm_Load(object sender, EventArgs e)
         {
             SetDefaultImage();

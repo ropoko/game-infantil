@@ -19,10 +19,18 @@ namespace GameInfantil
 
         private void ButtonHowToPlay_Click(object sender, EventArgs e)
         {
+            Hide();
+
+            var howToPlay = new HowToPlayForm();
+            howToPlay.Show();
         }
 
         private void ButtonAbout_Click(object sender, EventArgs e)
         {
+            Hide();
+
+            var about = new AboutForm();
+            about.Show();
         }
 
         private void MainForm_Load(object sender, EventArgs e)

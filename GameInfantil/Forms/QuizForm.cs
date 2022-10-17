@@ -31,7 +31,10 @@ namespace GameInfantil.Forms
         private void GetQuestion()
         {
             if (_quizQuestions.Count == _actualQuestion)
+            {
                 HandleFinishQuiz();
+                return;
+            }
 
             LabelQuestion.Text = _quizQuestions[_actualQuestion].Question;
 
@@ -43,7 +46,10 @@ namespace GameInfantil.Forms
 
         private void HandleFinishQuiz()
         {
-            return;
+            Hide();
+
+            var finish = new FinishForm("Parabéns, Você finalizou o Quiz!!");
+            finish.Show();
         }
 
         private void ButtonHome_Click(object sender, EventArgs e)
