@@ -22,5 +22,13 @@
             var memoryGame = new MemoryGameForm();
             memoryGame.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Hide();
+
+            var main = new MainForm();
+            main.Show();
+        }
     }
 }

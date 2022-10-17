@@ -30,5 +30,13 @@
                 $"a vítima deve deitar no chão e rolar. Quem estiver por perto deve cobri-la com um lençol ou pano molhado e levá-la " +
                 $"imediatamente ao hospital.\r\n\r\n*Não estoure as bolhas, pois há risco de infecção.";
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Hide();
+
+            var main = new MainForm();
+            main.Show();
+        }
     }
 }
