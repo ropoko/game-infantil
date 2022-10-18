@@ -35,6 +35,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.ButtonCredits = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // ButtonChooseGame
@@ -73,7 +74,7 @@
             this.ButtonAbout.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.ButtonAbout.Location = new System.Drawing.Point(463, 378);
             this.ButtonAbout.Name = "ButtonAbout";
-            this.ButtonAbout.Size = new System.Drawing.Size(178, 45);
+            this.ButtonAbout.Size = new System.Drawing.Size(147, 45);
             this.ButtonAbout.TabIndex = 2;
             this.ButtonAbout.Text = "Sobre";
             this.ButtonAbout.UseVisualStyleBackColor = false;
@@ -112,11 +113,26 @@
             this.label2.TabIndex = 6;
             this.label2.Text = "de";
             // 
+            // ButtonCredits
+            // 
+            this.ButtonCredits.BackColor = System.Drawing.Color.Coral;
+            this.ButtonCredits.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ButtonCredits.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.ButtonCredits.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ButtonCredits.Location = new System.Drawing.Point(616, 378);
+            this.ButtonCredits.Name = "ButtonCredits";
+            this.ButtonCredits.Size = new System.Drawing.Size(147, 45);
+            this.ButtonCredits.TabIndex = 7;
+            this.ButtonCredits.Text = "Créditos";
+            this.ButtonCredits.UseVisualStyleBackColor = false;
+            this.ButtonCredits.Click += new System.EventHandler(this.ButtonCredits_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(790, 450);
+            this.Controls.Add(this.ButtonCredits);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
@@ -140,5 +156,6 @@
         private Label label1;
         private Label label3;
         private Label label2;
+        private Button ButtonCredits;
     }
 }

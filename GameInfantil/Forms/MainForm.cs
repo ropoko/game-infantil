@@ -37,5 +37,13 @@ namespace GameInfantil
         {
             BackgroundImage = Image.FromFile($"{AppContext.BaseDirectory}/Assets/background.png");
         }
+
+        private void ButtonCredits_Click(object sender, EventArgs e)
+        {
+            Hide();
+
+            var credits = new CreditsForm();
+            credits.Show();
+        }
     }
 }
