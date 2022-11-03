@@ -154,6 +154,7 @@
             this.Controls.Add(this.Card2);
             this.Controls.Add(this.Card1);
             this.Name = "MemoryGameForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Jogo da Memória";
             this.Load += new System.EventHandler(this.MemoryGameForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Card1)).EndInit();

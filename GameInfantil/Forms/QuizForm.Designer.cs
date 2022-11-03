@@ -124,6 +124,7 @@
             this.Controls.Add(this.Option1);
             this.Controls.Add(this.LabelQuestion);
             this.Name = "QuizForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "QuizForm";
             this.Load += new System.EventHandler(this.QuizForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ButtonHome)).EndInit();

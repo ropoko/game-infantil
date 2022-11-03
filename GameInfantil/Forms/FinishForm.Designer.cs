@@ -75,6 +75,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.LabelFinishMessage);
             this.Name = "FinishForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FinishForm";
             this.Load += new System.EventHandler(this.FinishForm_Load);
             this.ResumeLayout(false);

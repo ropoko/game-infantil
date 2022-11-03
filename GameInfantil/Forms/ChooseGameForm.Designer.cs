@@ -91,6 +91,7 @@
             this.Controls.Add(this.ButtonMemoryGame);
             this.Controls.Add(this.ButtonQuizGame);
             this.Name = "ChooseGameForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ChooseGameForm";
             this.ResumeLayout(false);
 

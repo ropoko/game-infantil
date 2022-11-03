@@ -9,6 +9,8 @@
 
         private void AboutForm_Load(object sender, EventArgs e)
         {
+            BackgroundImage = Image.FromFile($"{AppContext.BaseDirectory}/Assets/background.png");
+
             TextBoxInfo.Text = $"ACIDENTES DOMÉSTICOS\r\n\r\nOs acidentes domésticos causados por queimaduras, " +
                 $"são as principais causas de procura aos serviços de saúde. Ocasionados durante o preparo dos alimentos " +
                 $"ou até mesmo, pelo manuseio de panelas. \r\nAs principais vítimas desses acidentes são crianças e " +

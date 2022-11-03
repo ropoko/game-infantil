@@ -37,6 +37,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Tahoma", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(22, 21);
             this.label1.Name = "label1";
@@ -52,6 +53,7 @@
             this.TextBoxInfo.Location = new System.Drawing.Point(12, 88);
             this.TextBoxInfo.Multiline = true;
             this.TextBoxInfo.Name = "TextBoxInfo";
+            this.TextBoxInfo.ReadOnly = true;
             this.TextBoxInfo.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.TextBoxInfo.Size = new System.Drawing.Size(776, 350);
             this.TextBoxInfo.TabIndex = 2;
@@ -79,6 +81,7 @@
             this.Controls.Add(this.TextBoxInfo);
             this.Controls.Add(this.label1);
             this.Name = "AboutForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AboutForm";
             this.Load += new System.EventHandler(this.AboutForm_Load);
             this.ResumeLayout(false);
