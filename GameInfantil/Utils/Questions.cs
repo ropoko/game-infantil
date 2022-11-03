@@ -63,10 +63,10 @@ namespace GameInfantil.Utils
             questions.Add(new QuizQuestion
             {
                 Answered = false,
-                Question = "Quando vejo uma situação de incêndio ou uma área com fogo, o quê devo fazer?",
+                Question = "Quando vejo uma situação de incêndio ou uma área com fogo, \n o quê devo fazer?",
                 Option1 = new QuizAnswer
                 {
-                    Text = "Pedir ajuda para um adulto.",
+                    Text = "Pedir ajuda para um adulto",
                     IsCorrect = true
                 },
                 Option2 = new QuizAnswer
@@ -92,22 +92,22 @@ namespace GameInfantil.Utils
                 Question = "No fogão os cabos das panelas devem ser virados para dentro do fogão, \nporque esse ato deve ser obrigatorio em todas as casas?",
                 Option1 = new QuizAnswer
                 {
-                    Text = "Porque a criança podera esbarrar nas panelas e pode \nocasionar um acidente.",
+                    Text = "Porque a criança podera esbarrar nas panelas e pode \nocasionar um acidente",
                     IsCorrect = true
                 },
                 Option2 = new QuizAnswer
                 {
-                    Text = "Porque as crianças podem pegar as panelas e brincar com elas.",
+                    Text = "Porque as crianças podem pegar as panelas e brincar com elas",
                     IsCorrect = false
                 },
                 Option3 = new QuizAnswer
                 {
-                    Text = "Porque o cachorro pode pegar a panela.",
+                    Text = "Porque o cachorro pode pegar a panela",
                     IsCorrect = false
                 },
                 Option4 = new QuizAnswer
                 {
-                    Text = "Porque dessa maneira as panelas iram cozinhar melhor.",
+                    Text = "Porque dessa maneira as panelas iram cozinhar melhor",
                     IsCorrect = false
                 }
             });
@@ -118,22 +118,22 @@ namespace GameInfantil.Utils
                 Question = "Se uma criança se queimar oque podemos passar em cima da queimadura?",
                 Option1 = new QuizAnswer
                 {
-                    Text = "Pomadas..",
+                    Text = "Pomadas",
                     IsCorrect = false
                 },
                 Option2 = new QuizAnswer
                 {
-                    Text = "Manteiga.",
+                    Text = "Manteiga",
                     IsCorrect = false
                 },
                 Option3 = new QuizAnswer
                 {
-                    Text = "Gelo.",
+                    Text = "Gelo",
                     IsCorrect = false
                 },
                 Option4 = new QuizAnswer
                 {
-                    Text = "Nenhuma das alternativas.",
+                    Text = "Nenhuma das alternativas",
                     IsCorrect = true
                 }
             });
@@ -161,22 +161,22 @@ namespace GameInfantil.Utils
                 Question = "As crianças devem ser orientadas durante as brincadeiras pois podem ter riscos. \r\nQual é a brincadeira?",
                 Option1 = new QuizAnswer
                 {
-                    Text = "Esconde-esconde..",
+                    Text = "Esconde-esconde",
                     IsCorrect = false
                 },
                 Option2 = new QuizAnswer
                 {
-                    Text = "Soltar pipas.",
+                    Text = "Soltar pipas",
                     IsCorrect = true
                 },
                 Option3 = new QuizAnswer
                 {
-                    Text = "Jogar futebol.",
+                    Text = "Jogar futebol",
                     IsCorrect = false
                 },
                 Option4 = new QuizAnswer
                 {
-                    Text = "Jogar Videogame.",
+                    Text = "Jogar Videogame",
                     IsCorrect = false
                 }
             });
@@ -187,22 +187,22 @@ namespace GameInfantil.Utils
                 Question = "A um produto que é muito perigoso para as crianças e deve ser super evitado \n em casa pelos pais, o nome dele é?",
                 Option1 = new QuizAnswer
                 {
-                    Text = "Álcool em gel.",
+                    Text = "Álcool em gel",
                     IsCorrect = false
                 },
                 Option2 = new QuizAnswer
                 {
-                    Text = "Água.",
+                    Text = "Água",
                     IsCorrect = false
                 },
                 Option3 = new QuizAnswer
                 {
-                    Text = "Materiais inflamáveis.",
+                    Text = "Materiais inflamáveis",
                     IsCorrect = true
                 },
                 Option4 = new QuizAnswer
                 {
-                    Text = "Sucos.",
+                    Text = "Sucos",
                     IsCorrect = false
                 }
             });
@@ -210,25 +210,25 @@ namespace GameInfantil.Utils
             questions.Add(new QuizQuestion
             {
                 Answered = false,
-                Question = "Em uma casa tem varias tomadas tapadas para protegelas, porque isso é necessário?",
+                Question = "Em uma casa tem varias tomadas tapadas para protegelas, \nporque isso é necessário?",
                 Option1 = new QuizAnswer
                 {
-                    Text = "É para proteger as tomadas da poeira doméstica.",
+                    Text = "É para proteger as tomadas da poeira doméstica",
                     IsCorrect = false
                 },
                 Option2 = new QuizAnswer
                 {
-                    Text = "É para evitar que uma criança enfie qualquer coisa dentro delas.",
+                    Text = "É para evitar que uma criança enfie qualquer coisa dentro delas",
                     IsCorrect = true
                 },
                 Option3 = new QuizAnswer
                 {
-                    Text = "Para proteger da água.",
+                    Text = "Para proteger da água",
                     IsCorrect = false
                 },
                 Option4 = new QuizAnswer
                 {
-                    Text = "Para deixar o ambiente mais bonito.",
+                    Text = "Para deixar o ambiente mais bonito",
                     IsCorrect = false
                 }
             });
@@ -239,22 +239,22 @@ namespace GameInfantil.Utils
                 Question = "Quem são as principais vitimas de acidentes domésticos?",
                 Option1 = new QuizAnswer
                 {
-                    Text = "Adultos.",
+                    Text = "Adultos",
                     IsCorrect = false
                 },
                 Option2 = new QuizAnswer
                 {
-                    Text = "Crianças e animais.",
+                    Text = "Crianças e animais",
                     IsCorrect = false
                 },
                 Option3 = new QuizAnswer
                 {
-                    Text = "Adolescentes e adultos.",
+                    Text = "Adolescentes e adultos",
                     IsCorrect = false
                 },
                 Option4 = new QuizAnswer
                 {
-                    Text = "Crianças e adolescentes.",
+                    Text = "Crianças e adolescentes",
                     IsCorrect = true
                 }
             });
@@ -265,22 +265,22 @@ namespace GameInfantil.Utils
                 Question = "Porque as crianças devem ficar longe da cozinha?",
                 Option1 = new QuizAnswer
                 {
-                    Text = "Porque tem lugares melhores para elas estarem.",
+                    Text = "Porque tem lugares melhores para elas estarem",
                     IsCorrect = false
                 },
                 Option2 = new QuizAnswer
                 {
-                    Text = "Se não elas irão comer demais.",
+                    Text = "Se não elas irão comer demais",
                     IsCorrect = false
                 },
                 Option3 = new QuizAnswer
                 {
-                    Text = "Para evitar acidentes com fogo.",
+                    Text = "Para evitar acidentes com fogo",
                     IsCorrect = true
                 },
                 Option4 = new QuizAnswer
                 {
-                    Text = "Se não elas irão bagunçar a cozinha.",
+                    Text = "Se não elas irão bagunçar a cozinha",
                     IsCorrect = false
                 }
             });
@@ -288,7 +288,7 @@ namespace GameInfantil.Utils
             questions.Add(new QuizQuestion
             {
                 Answered = false,
-                Question = "Caso a criança se queime, a queimadura irá criar bolhas, podemos estourar?",
+                Question = "Caso a criança se queime, a queimadura irá criar bolhas, \npodemos estourar?",
                 Option1 = new QuizAnswer
                 {
                     Text = "Não",
@@ -299,31 +299,30 @@ namespace GameInfantil.Utils
                     Text = "Sim",
                     IsCorrect = false
                 },
-
             });
 
             questions.Add(new QuizQuestion
             {
                 Answered = false,
-                Question = "Se alguém estiver pegando fogo o que essa pessoa tem que fazer?",
+                Question = "Se alguém estiver pegando fogo, o que essa pessoa tem que fazer?",
                 Option1 = new QuizAnswer
                 {
-                    Text = "A vítima deve deitar no chão e rolar.",
+                    Text = "A vítima deve deitar no chão e rolar",
                     IsCorrect = true
                 },
                 Option2 = new QuizAnswer
                 {
-                    Text = "Ficar parada.",
+                    Text = "Ficar parada",
                     IsCorrect = false
                 },
                 Option3 = new QuizAnswer
                 {
-                    Text = "Se jogar em folhas.",
+                    Text = "Se jogar em folhas",
                     IsCorrect = false
                 },
                 Option4 = new QuizAnswer
                 {
-                    Text = "Se bater.",
+                    Text = "Se bater",
                     IsCorrect = false
                 }
             });
@@ -334,22 +333,22 @@ namespace GameInfantil.Utils
                 Question = "Em caso de acidente o que os pais devem fazer?",
                 Option1 = new QuizAnswer
                 {
-                    Text = "Deixar a criança machucada.",
+                    Text = "Deixar a criança machucada",
                     IsCorrect = false
                 },
                 Option2 = new QuizAnswer
                 {
-                    Text = "Lavar com água por 10 minutos e levar ao médico.",
+                    Text = "Lavar com água por 10 minutos e levar ao médico",
                     IsCorrect = true
                 },
                 Option3 = new QuizAnswer
                 {
-                    Text = "Dar um sorvete para a criança.",
+                    Text = "Dar um sorvete para a criança",
                     IsCorrect = false
                 },
                 Option4 = new QuizAnswer
                 {
-                    Text = "Mexer mais na ferida.",
+                    Text = "Mexer mais na ferida",
                     IsCorrect = false
                 }
             });
@@ -360,22 +359,22 @@ namespace GameInfantil.Utils
                 Question = "O quê irá acontecer se a criança passar receitas caseiras na queimadura?",
                 Option1 = new QuizAnswer
                 {
-                    Text = "Irá ajudar a curar a ferida.",
+                    Text = "Irá ajudar a curar a ferida",
                     IsCorrect = false
                 },
                 Option2 = new QuizAnswer
                 {
-                    Text = "Nada irá acontecer.",
+                    Text = "Nada irá acontecer",
                     IsCorrect = false
                 },
                 Option3 = new QuizAnswer
                 {
-                    Text = "Prejudicará mais a queimadura.",
+                    Text = "Prejudicará mais a queimadura",
                     IsCorrect = true
                 },
                 Option4 = new QuizAnswer
                 {
-                    Text = "A ferida irá trocar de cor.",
+                    Text = "A ferida irá trocar de cor",
                     IsCorrect = false
                 }
             });

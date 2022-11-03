@@ -1,11 +1,14 @@
 ﻿using GameInfantil.Models;
 using GameInfantil.Utils;
+using System.Net.Security;
 
 namespace GameInfantil.Forms
 {
     public partial class QuizForm : Form
     {
         private int _actualQuestion = 0;
+
+        private int _points = 0;
 
         private readonly List<QuizQuestion> _quizQuestions = Questions.GetQuestions();
 
@@ -18,14 +21,39 @@ namespace GameInfantil.Forms
         {
             GetQuestion();
 
+            LabelPoints.Text = _points.ToString();
+
+            BackgroundImage = Image.FromFile($"{AppContext.BaseDirectory}/Assets/background.png");
+
             ButtonHome.Image = Image.FromFile($"{AppContext.BaseDirectory}/Assets/home.png");
             ButtonHome.SizeMode = PictureBoxSizeMode.StretchImage;
         }
 
+        private void Points(QuizQuestion question)
+        {
+            QuizAnswer? optionSelected = Option1.Checked ? question.Option1
+                : Option2.Checked ? question.Option2
+                : Option3.Checked ? question.Option3
+                : question.Option4;
+
+            if (optionSelected!.IsCorrect)
+            {
+                _points += 100;
+                LabelPoints.Text = _points.ToString();
+            }
+        }
+
         private void ButtonNextQuestion_Click(object sender, EventArgs e)
         {
+            Points(_quizQuestions[_actualQuestion]);
+
             _actualQuestion++;
             GetQuestion();
+
+
+            Option3.Visible = !string.IsNullOrEmpty(Option3.Text);
+
+            Option4.Visible = !string.IsNullOrEmpty(Option4.Text);
         }
 
         private void GetQuestion()
@@ -48,7 +76,7 @@ namespace GameInfantil.Forms
         {
             Hide();
 
-            var finish = new FinishForm("Parabéns, Você finalizou o Quiz!!");
+            var finish = new FinishForm("Parabéns, Você finalizou o Quiz!!", _points);
             finish.Show();
         }
 
