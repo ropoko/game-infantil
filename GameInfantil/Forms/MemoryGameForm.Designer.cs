@@ -36,8 +36,8 @@
             this.Card8 = new System.Windows.Forms.PictureBox();
             this.Card6 = new System.Windows.Forms.PictureBox();
             this.Card5 = new System.Windows.Forms.PictureBox();
+            this.LabelPoints = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.Card1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Card2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Card4)).BeginInit();
@@ -120,30 +120,34 @@
             this.Card5.TabStop = false;
             this.Card5.Click += new System.EventHandler(this.FlipCard);
             // 
+            // LabelPoints
+            // 
+            this.LabelPoints.AutoSize = true;
+            this.LabelPoints.BackColor = System.Drawing.Color.Transparent;
+            this.LabelPoints.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.LabelPoints.Location = new System.Drawing.Point(725, 420);
+            this.LabelPoints.Name = "LabelPoints";
+            this.LabelPoints.Size = new System.Drawing.Size(54, 21);
+            this.LabelPoints.TabIndex = 10;
+            this.LabelPoints.Text = "label2";
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(685, 426);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(654, 420);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(47, 15);
-            this.label1.TabIndex = 8;
+            this.label1.Size = new System.Drawing.Size(65, 21);
+            this.label1.TabIndex = 9;
             this.label1.Text = "Pontos:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(738, 426);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(38, 15);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "label2";
             // 
             // MemoryGameForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.LabelPoints);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Card7);
             this.Controls.Add(this.Card8);
@@ -180,7 +184,7 @@
         private PictureBox Card8;
         private PictureBox Card6;
         private PictureBox Card5;
+        private Label LabelPoints;
         private Label label1;
-        private Label label2;
     }
 }

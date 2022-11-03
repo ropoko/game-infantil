@@ -10,6 +10,8 @@ namespace GameInfantil.Forms
 
         private int cardsFlipped = 0;
 
+        private readonly List<ImageTemplateControl> _countImage = new();
+
         public MemoryGameForm()
         {
             InitializeComponent();
@@ -61,12 +63,14 @@ namespace GameInfantil.Forms
             if (image.Image == image.InitialImage)
             {
                 image.Image = Image.FromFile(_defaultImage);
-                cardsFlipped++;
+                cardsFlipped--;
             }
             else
             {
+                if (cardsFlipped == 2) return;
+
                 image.Image = image.InitialImage;
-                cardsFlipped--;
+                cardsFlipped++;
             }
         }
     }
