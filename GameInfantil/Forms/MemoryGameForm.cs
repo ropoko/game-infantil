@@ -10,7 +10,7 @@ namespace GameInfantil.Forms
 
         private int cardsFlipped = 0;
 
-        private readonly List<ImageTemplateControl> _countImage = new();
+        
 
         public MemoryGameForm()
         {
