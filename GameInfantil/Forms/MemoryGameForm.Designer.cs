@@ -38,6 +38,7 @@
             this.Card5 = new System.Windows.Forms.PictureBox();
             this.LabelPoints = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.ButtonHome = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.Card1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Card2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Card4)).BeginInit();
@@ -46,6 +47,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.Card8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Card6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Card5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ButtonHome)).BeginInit();
             this.SuspendLayout();
             // 
             // Card1
@@ -142,11 +144,23 @@
             this.label1.TabIndex = 9;
             this.label1.Text = "Pontos:";
             // 
+            // ButtonHome
+            // 
+            this.ButtonHome.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ButtonHome.Location = new System.Drawing.Point(12, 411);
+            this.ButtonHome.Name = "ButtonHome";
+            this.ButtonHome.Size = new System.Drawing.Size(30, 30);
+            this.ButtonHome.TabIndex = 11;
+            this.ButtonHome.TabStop = false;
+            this.ButtonHome.Click += new System.EventHandler(this.ButtonHome_Click);
+            // 
             // MemoryGameForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.ButtonHome);
             this.Controls.Add(this.LabelPoints);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Card7);
@@ -157,6 +171,8 @@
             this.Controls.Add(this.Card4);
             this.Controls.Add(this.Card2);
             this.Controls.Add(this.Card1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "MemoryGameForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Jogo da Memória";
@@ -169,6 +185,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.Card8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Card6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Card5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ButtonHome)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -186,5 +203,6 @@
         private PictureBox Card5;
         private Label LabelPoints;
         private Label label1;
+        private PictureBox ButtonHome;
     }
 }

@@ -54,6 +54,9 @@ namespace GameInfantil.Forms
         private void MemoryGameForm_Load(object sender, EventArgs e)
         {
             SetDefaultImage();
+
+            ButtonHome.Image = Image.FromFile($"{AppContext.BaseDirectory}/Assets/home.png");
+            ButtonHome.SizeMode = PictureBoxSizeMode.StretchImage;
         }
 
         private void FlipCard(object sender, EventArgs e)
@@ -72,6 +75,14 @@ namespace GameInfantil.Forms
                 image.Image = image.InitialImage;
                 cardsFlipped++;
             }
+        }
+
+        private void ButtonHome_Click(object sender, EventArgs e)
+        {
+            Hide();
+
+            var main = new MainForm();
+            main.Show();
         }
     }
 }
