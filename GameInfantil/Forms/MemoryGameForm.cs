@@ -17,6 +17,10 @@ namespace GameInfantil.Forms
         private int _countBoyCard = 0;
         private int _countGirlCard = 0;
 
+        private int _points = 0;
+
+        private PictureBox? _currentCard = null;
+
         public MemoryGameForm()
         {
             InitializeComponent();
@@ -99,31 +103,43 @@ namespace GameInfantil.Forms
             ButtonHome.Image = Image.FromFile($"{AppContext.BaseDirectory}/Assets/home.png");
             ButtonHome.SizeMode = PictureBoxSizeMode.StretchImage;
 
-            LabelPoints.Text = "0";
+            LabelPoints.Text = _points.ToString();
         }
 
         private void FlipCard(object sender, EventArgs e)
         {
-            var image = (PictureBox)sender;
+            var card = (PictureBox)sender;
 
-            if (image.Image == image.InitialImage)
+            if (card.Image == card.InitialImage)
             {
-                image.Image = Image.FromFile(_defaultImage);
+                card.Image = Image.FromFile(_defaultImage);
                 _cardsFlipped--;
             }
             else
             {
-                //if (_cardsFlipped == 2)
-                //{
-                //    _cards.ForEach((card) =>
-                //    {
-                //        card.Image = Image.FromFile(_defaultImage);
-                //    });
+                if (_currentCard != null && _currentCard.InitialImage == card.InitialImage)
+                {
+                    _cardsFlipped = 0;
+                    _points += 100;
+                    LabelPoints.Text = _points.ToString();
 
-                //    return;
-                //}
+                    return;
+                }
 
-                image.Image = image.InitialImage;
+                if (_cardsFlipped == 2)
+                {
+                    _cards.ForEach((card) =>
+                    {
+                        card.Image = Image.FromFile(_defaultImage);
+                    });
+
+                    _cardsFlipped = 0;
+                    return;
+                }
+
+                card.Image = card.InitialImage;
+                _currentCard = card;
+
                 _cardsFlipped++;
             }
         }
