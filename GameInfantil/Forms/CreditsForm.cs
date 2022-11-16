@@ -19,5 +19,13 @@
         {
             BackgroundImage = Image.FromFile($"{AppContext.BaseDirectory}/Assets/background.png");
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Hide();
+
+            var main = new MainForm();
+            main.Show();
+        }
     }
 }
