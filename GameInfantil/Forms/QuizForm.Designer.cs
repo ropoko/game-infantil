@@ -45,9 +45,10 @@
             this.LabelQuestion.AutoSize = true;
             this.LabelQuestion.BackColor = System.Drawing.Color.Transparent;
             this.LabelQuestion.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.LabelQuestion.Location = new System.Drawing.Point(69, 76);
+            this.LabelQuestion.Location = new System.Drawing.Point(99, 127);
+            this.LabelQuestion.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LabelQuestion.Name = "LabelQuestion";
-            this.LabelQuestion.Size = new System.Drawing.Size(57, 21);
+            this.LabelQuestion.Size = new System.Drawing.Size(83, 32);
             this.LabelQuestion.TabIndex = 0;
             this.LabelQuestion.Text = "label1";
             // 
@@ -56,9 +57,10 @@
             this.Option1.AutoSize = true;
             this.Option1.BackColor = System.Drawing.Color.Transparent;
             this.Option1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Option1.Location = new System.Drawing.Point(186, 134);
+            this.Option1.Location = new System.Drawing.Point(266, 223);
+            this.Option1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Option1.Name = "Option1";
-            this.Option1.Size = new System.Drawing.Size(114, 24);
+            this.Option1.Size = new System.Drawing.Size(172, 35);
             this.Option1.TabIndex = 1;
             this.Option1.TabStop = true;
             this.Option1.Text = "radioButton1";
@@ -69,9 +71,10 @@
             this.Option2.AutoSize = true;
             this.Option2.BackColor = System.Drawing.Color.Transparent;
             this.Option2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Option2.Location = new System.Drawing.Point(186, 173);
+            this.Option2.Location = new System.Drawing.Point(266, 288);
+            this.Option2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Option2.Name = "Option2";
-            this.Option2.Size = new System.Drawing.Size(114, 24);
+            this.Option2.Size = new System.Drawing.Size(172, 35);
             this.Option2.TabIndex = 2;
             this.Option2.TabStop = true;
             this.Option2.Text = "radioButton2";
@@ -82,9 +85,10 @@
             this.Option3.AutoSize = true;
             this.Option3.BackColor = System.Drawing.Color.Transparent;
             this.Option3.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Option3.Location = new System.Drawing.Point(186, 215);
+            this.Option3.Location = new System.Drawing.Point(266, 358);
+            this.Option3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Option3.Name = "Option3";
-            this.Option3.Size = new System.Drawing.Size(114, 24);
+            this.Option3.Size = new System.Drawing.Size(172, 35);
             this.Option3.TabIndex = 3;
             this.Option3.TabStop = true;
             this.Option3.Text = "radioButton3";
@@ -95,9 +99,10 @@
             this.Option4.AutoSize = true;
             this.Option4.BackColor = System.Drawing.Color.Transparent;
             this.Option4.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Option4.Location = new System.Drawing.Point(186, 254);
+            this.Option4.Location = new System.Drawing.Point(266, 423);
+            this.Option4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Option4.Name = "Option4";
-            this.Option4.Size = new System.Drawing.Size(114, 24);
+            this.Option4.Size = new System.Drawing.Size(172, 35);
             this.Option4.TabIndex = 4;
             this.Option4.TabStop = true;
             this.Option4.Text = "radioButton4";
@@ -109,9 +114,10 @@
             this.ButtonNextQuestion.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ButtonNextQuestion.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.ButtonNextQuestion.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.ButtonNextQuestion.Location = new System.Drawing.Point(231, 330);
+            this.ButtonNextQuestion.Location = new System.Drawing.Point(330, 550);
+            this.ButtonNextQuestion.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ButtonNextQuestion.Name = "ButtonNextQuestion";
-            this.ButtonNextQuestion.Size = new System.Drawing.Size(152, 43);
+            this.ButtonNextQuestion.Size = new System.Drawing.Size(217, 72);
             this.ButtonNextQuestion.TabIndex = 5;
             this.ButtonNextQuestion.Text = "Próxima";
             this.ButtonNextQuestion.UseVisualStyleBackColor = false;
@@ -120,9 +126,10 @@
             // ButtonHome
             // 
             this.ButtonHome.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ButtonHome.Location = new System.Drawing.Point(12, 12);
+            this.ButtonHome.Location = new System.Drawing.Point(17, 20);
+            this.ButtonHome.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ButtonHome.Name = "ButtonHome";
-            this.ButtonHome.Size = new System.Drawing.Size(30, 30);
+            this.ButtonHome.Size = new System.Drawing.Size(53, 49);
             this.ButtonHome.TabIndex = 6;
             this.ButtonHome.TabStop = false;
             this.ButtonHome.Click += new System.EventHandler(this.ButtonHome_Click);
@@ -132,9 +139,10 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(534, 12);
+            this.label1.Location = new System.Drawing.Point(763, 20);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(65, 21);
+            this.label1.Size = new System.Drawing.Size(98, 32);
             this.label1.TabIndex = 7;
             this.label1.Text = "Pontos:";
             // 
@@ -143,18 +151,19 @@
             this.LabelPoints.AutoSize = true;
             this.LabelPoints.BackColor = System.Drawing.Color.Transparent;
             this.LabelPoints.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.LabelPoints.Location = new System.Drawing.Point(605, 12);
+            this.LabelPoints.Location = new System.Drawing.Point(864, 20);
+            this.LabelPoints.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LabelPoints.Name = "LabelPoints";
-            this.LabelPoints.Size = new System.Drawing.Size(54, 21);
+            this.LabelPoints.Size = new System.Drawing.Size(79, 32);
             this.LabelPoints.TabIndex = 8;
             this.LabelPoints.Text = "label2";
             // 
             // QuizForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(684, 406);
+            this.ClientSize = new System.Drawing.Size(977, 677);
             this.Controls.Add(this.LabelPoints);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.ButtonHome);
@@ -165,6 +174,7 @@
             this.Controls.Add(this.Option1);
             this.Controls.Add(this.LabelQuestion);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MaximizeBox = false;
             this.Name = "QuizForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

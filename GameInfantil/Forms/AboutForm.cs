@@ -14,7 +14,7 @@
             TextBoxInfo.Text = $"ACIDENTES DOMÉSTICOS\r\n\r\nOs acidentes domésticos causados por queimaduras, " +
                 $"são as principais causas de procura aos serviços de saúde. Ocasionados durante o preparo dos alimentos " +
                 $"ou até mesmo, pelo manuseio de panelas. \r\nAs principais vítimas desses acidentes são crianças e " +
-                $"adolescentes.\r\n\r\n \r\n\r\n \r\n\r\n*Crianças devem ficar longe do fogão, de preferência fora da " +
+                $"adolescentes.\r\n\r\n *Crianças devem ficar longe do fogão, de preferência fora da " +
                 $"cozinha quando o fogão estiver sendo utilizado. Os pais devem ficar atentos às atividades dos filhos." +
                 $"*Os cabos das panelas devem ser virados para a parte de dentro do fogão e, se for ferver ou fritar algum alimento, " +
                 $"é preferível usar as bocas do fundo do fogão. Isso diminui o risco de a criança esbarrar nas panelas." +

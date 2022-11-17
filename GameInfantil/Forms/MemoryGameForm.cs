@@ -17,9 +17,11 @@ namespace GameInfantil.Forms
         private int _countBoyCard = 0;
         private int _countGirlCard = 0;
 
+        private readonly List<PictureBox> _cardsFound = new();
+
         private int _points = 0;
 
-        private PictureBox? _currentCard = null;
+        private PictureBox? _lastCard = null;
 
         public MemoryGameForm()
         {
@@ -67,6 +69,7 @@ namespace GameInfantil.Forms
                     {
                         _countGirlCard++;
                         card.InitialImage = Image.FromFile($"{_basePath}{Images.GetImages().First(p => p.Id == 2).Url}");
+                        card.Tag = "Girl";
                     }
                     break;
                 case NameImage.Boy:
@@ -75,6 +78,7 @@ namespace GameInfantil.Forms
                     {
                         _countBoyCard++;
                         card.InitialImage = Image.FromFile($"{_basePath}{Images.GetImages().First(p => p.Id == 1).Url}");
+                        card.Tag = "Boy";
                     }
                     break;
                 case NameImage.Fire:
@@ -83,6 +87,7 @@ namespace GameInfantil.Forms
                     {
                         _countFireCard++;
                         card.InitialImage = Image.FromFile($"{_basePath}{Images.GetImages().First(p => p.Id == 3).Url}");
+                        card.Tag = "Fire";
                     }
                     break;
                 case NameImage.Water:
@@ -91,6 +96,7 @@ namespace GameInfantil.Forms
                     {
                         _countWaterCard++;
                         card.InitialImage = Image.FromFile($"{_basePath}{Images.GetImages().First(p => p.Id == 4).Url}");
+                        card.Tag = "Water";
                     }
                     break;
             }
@@ -114,33 +120,65 @@ namespace GameInfantil.Forms
             {
                 card.Image = Image.FromFile(_defaultImage);
                 _cardsFlipped--;
+
+                return;
             }
             else
             {
-                if (_currentCard != null && _currentCard.InitialImage == card.InitialImage)
-                {
-                    _cardsFlipped = 0;
-                    _points += 100;
-                    LabelPoints.Text = _points.ToString();
-
-                    return;
-                }
-
                 if (_cardsFlipped == 2)
                 {
                     _cards.ForEach((card) =>
                     {
-                        card.Image = Image.FromFile(_defaultImage);
+                        if (_cardsFound.SingleOrDefault(c => c == card) == null)
+                            card.Image = Image.FromFile(_defaultImage);
                     });
 
-                    _cardsFlipped = 0;
+                    _cardsFlipped = 1;
+                    card.Image = card.InitialImage;
+
+                    _lastCard = card;
+
                     return;
                 }
+                else if (_cardsFlipped == 1)
+                {
+                    if (_lastCard != null && _lastCard.Tag == card.Tag)
+                    {
+                        card.Image = card.InitialImage;
 
-                card.Image = card.InitialImage;
-                _currentCard = card;
+                        _cardsFound.Add(_lastCard);
+                        _cardsFound.Add(card);
 
-                _cardsFlipped++;
+                        _lastCard = null;
+                        _cardsFlipped = 0;
+
+                        _points += 100;
+                        LabelPoints.Text = _points.ToString();
+
+                        if (_cards.Count == _cardsFound.Count)
+                        {
+                            Hide();
+
+                            var finish = new FinishForm("Parabéns, Você finalizou o Jogo \n da Memória!!", _points);
+                            finish.Show();
+                        }
+                    }
+                    else
+                    {
+                        _cardsFlipped++;
+                        card.Image = card.InitialImage;
+                        return;
+                    }
+                }
+                else
+                {
+                    _cardsFlipped++;
+                    card.Image = card.InitialImage;
+
+                    _lastCard = card;
+
+                    return;
+                }
             }
         }
 

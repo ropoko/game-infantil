@@ -19,7 +19,7 @@
             BackgroundImage = Image.FromFile($"{AppContext.BaseDirectory}/Assets/background.png");
             LabelFinishMessage.Text = _message;
 
-            LabelScore.Text = $"{_points} pontos";
+            LabelScore.Text = $"{_points} pontos!!";
         }
 
         private void button1_Click(object sender, EventArgs e)

@@ -52,72 +52,80 @@
             // 
             // Card1
             // 
-            this.Card1.Location = new System.Drawing.Point(21, 27);
+            this.Card1.Location = new System.Drawing.Point(30, 45);
+            this.Card1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Card1.Name = "Card1";
-            this.Card1.Size = new System.Drawing.Size(143, 136);
+            this.Card1.Size = new System.Drawing.Size(204, 227);
             this.Card1.TabIndex = 0;
             this.Card1.TabStop = false;
             this.Card1.Click += new System.EventHandler(this.FlipCard);
             // 
             // Card2
             // 
-            this.Card2.Location = new System.Drawing.Point(210, 27);
+            this.Card2.Location = new System.Drawing.Point(300, 45);
+            this.Card2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Card2.Name = "Card2";
-            this.Card2.Size = new System.Drawing.Size(143, 136);
+            this.Card2.Size = new System.Drawing.Size(204, 227);
             this.Card2.TabIndex = 1;
             this.Card2.TabStop = false;
             this.Card2.Click += new System.EventHandler(this.FlipCard);
             // 
             // Card4
             // 
-            this.Card4.Location = new System.Drawing.Point(599, 27);
+            this.Card4.Location = new System.Drawing.Point(856, 45);
+            this.Card4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Card4.Name = "Card4";
-            this.Card4.Size = new System.Drawing.Size(143, 136);
+            this.Card4.Size = new System.Drawing.Size(204, 227);
             this.Card4.TabIndex = 2;
             this.Card4.TabStop = false;
             this.Card4.Click += new System.EventHandler(this.FlipCard);
             // 
             // Card3
             // 
-            this.Card3.Location = new System.Drawing.Point(401, 27);
+            this.Card3.Location = new System.Drawing.Point(573, 45);
+            this.Card3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Card3.Name = "Card3";
-            this.Card3.Size = new System.Drawing.Size(143, 136);
+            this.Card3.Size = new System.Drawing.Size(204, 227);
             this.Card3.TabIndex = 3;
             this.Card3.TabStop = false;
             this.Card3.Click += new System.EventHandler(this.FlipCard);
             // 
             // Card7
             // 
-            this.Card7.Location = new System.Drawing.Point(401, 230);
+            this.Card7.Location = new System.Drawing.Point(573, 383);
+            this.Card7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Card7.Name = "Card7";
-            this.Card7.Size = new System.Drawing.Size(143, 136);
+            this.Card7.Size = new System.Drawing.Size(204, 227);
             this.Card7.TabIndex = 7;
             this.Card7.TabStop = false;
             this.Card7.Click += new System.EventHandler(this.FlipCard);
             // 
             // Card8
             // 
-            this.Card8.Location = new System.Drawing.Point(599, 230);
+            this.Card8.Location = new System.Drawing.Point(856, 383);
+            this.Card8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Card8.Name = "Card8";
-            this.Card8.Size = new System.Drawing.Size(143, 136);
+            this.Card8.Size = new System.Drawing.Size(204, 227);
             this.Card8.TabIndex = 6;
             this.Card8.TabStop = false;
             this.Card8.Click += new System.EventHandler(this.FlipCard);
             // 
             // Card6
             // 
-            this.Card6.Location = new System.Drawing.Point(210, 230);
+            this.Card6.Location = new System.Drawing.Point(300, 383);
+            this.Card6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Card6.Name = "Card6";
-            this.Card6.Size = new System.Drawing.Size(143, 136);
+            this.Card6.Size = new System.Drawing.Size(204, 227);
             this.Card6.TabIndex = 5;
             this.Card6.TabStop = false;
             this.Card6.Click += new System.EventHandler(this.FlipCard);
             // 
             // Card5
             // 
-            this.Card5.Location = new System.Drawing.Point(21, 230);
+            this.Card5.Location = new System.Drawing.Point(30, 383);
+            this.Card5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Card5.Name = "Card5";
-            this.Card5.Size = new System.Drawing.Size(143, 136);
+            this.Card5.Size = new System.Drawing.Size(204, 227);
             this.Card5.TabIndex = 4;
             this.Card5.TabStop = false;
             this.Card5.Click += new System.EventHandler(this.FlipCard);
@@ -127,9 +135,10 @@
             this.LabelPoints.AutoSize = true;
             this.LabelPoints.BackColor = System.Drawing.Color.Transparent;
             this.LabelPoints.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.LabelPoints.Location = new System.Drawing.Point(725, 420);
+            this.LabelPoints.Location = new System.Drawing.Point(1036, 700);
+            this.LabelPoints.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LabelPoints.Name = "LabelPoints";
-            this.LabelPoints.Size = new System.Drawing.Size(54, 21);
+            this.LabelPoints.Size = new System.Drawing.Size(79, 32);
             this.LabelPoints.TabIndex = 10;
             this.LabelPoints.Text = "label2";
             // 
@@ -138,28 +147,30 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(654, 420);
+            this.label1.Location = new System.Drawing.Point(934, 700);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(65, 21);
+            this.label1.Size = new System.Drawing.Size(98, 32);
             this.label1.TabIndex = 9;
             this.label1.Text = "Pontos:";
             // 
             // ButtonHome
             // 
             this.ButtonHome.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ButtonHome.Location = new System.Drawing.Point(12, 411);
+            this.ButtonHome.Location = new System.Drawing.Point(17, 685);
+            this.ButtonHome.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ButtonHome.Name = "ButtonHome";
-            this.ButtonHome.Size = new System.Drawing.Size(30, 30);
+            this.ButtonHome.Size = new System.Drawing.Size(61, 51);
             this.ButtonHome.TabIndex = 11;
             this.ButtonHome.TabStop = false;
             this.ButtonHome.Click += new System.EventHandler(this.ButtonHome_Click);
             // 
             // MemoryGameForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1143, 750);
             this.Controls.Add(this.ButtonHome);
             this.Controls.Add(this.LabelPoints);
             this.Controls.Add(this.label1);
@@ -172,6 +183,7 @@
             this.Controls.Add(this.Card2);
             this.Controls.Add(this.Card1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MaximizeBox = false;
             this.Name = "MemoryGameForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
