@@ -19,5 +19,10 @@
         {
             BackgroundImage = Image.FromFile($"{AppContext.BaseDirectory}/Assets/background.png");
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -178,7 +178,7 @@
             this.MaximizeBox = false;
             this.Name = "QuizForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "QuizForm";
+            this.Text = "Quiz";
             this.Load += new System.EventHandler(this.QuizForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ButtonHome)).EndInit();
             this.ResumeLayout(false);

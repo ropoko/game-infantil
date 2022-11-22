@@ -31,7 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AboutForm));
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.TextBoxInfo = new System.Windows.Forms.RichTextBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -61,17 +62,31 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // TextBoxInfo
+            // button2
             // 
-            this.TextBoxInfo.BackColor = System.Drawing.Color.Ivory;
-            this.TextBoxInfo.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TextBoxInfo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.TextBoxInfo.Location = new System.Drawing.Point(12, 123);
-            this.TextBoxInfo.Name = "TextBoxInfo";
-            this.TextBoxInfo.ReadOnly = true;
-            this.TextBoxInfo.Size = new System.Drawing.Size(1119, 615);
-            this.TextBoxInfo.TabIndex = 4;
-            this.TextBoxInfo.Text = "";
+            this.button2.BackColor = System.Drawing.Color.Coral;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button2.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button2.Location = new System.Drawing.Point(141, 319);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(327, 188);
+            this.button2.TabIndex = 4;
+            this.button2.Text = "Em caso de acidentes";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.Coral;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button3.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button3.Location = new System.Drawing.Point(614, 319);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(344, 188);
+            this.button3.TabIndex = 5;
+            this.button3.Text = "Prevenção de acidentes";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // AboutForm
             // 
@@ -79,7 +94,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1143, 750);
-            this.Controls.Add(this.TextBoxInfo);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -87,7 +103,7 @@
             this.MaximizeBox = false;
             this.Name = "AboutForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "AboutForm";
+            this.Text = "Sobre";
             this.Load += new System.EventHandler(this.AboutForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -98,6 +114,7 @@
 
         private Label label1;
         private Button button1;
-        private RichTextBox TextBoxInfo;
+        private Button button2;
+        private Button button3;
     }
 }

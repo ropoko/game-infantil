@@ -98,7 +98,7 @@
             this.MaximizeBox = false;
             this.Name = "ChooseGameForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "ChooseGameForm";
+            this.Text = "Escolha o jogo";
             this.ResumeLayout(false);
 
         }

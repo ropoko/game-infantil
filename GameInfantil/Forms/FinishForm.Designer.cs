@@ -102,7 +102,7 @@
             this.MaximizeBox = false;
             this.Name = "FinishForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FinishForm";
+            this.Text = "Pontuação";
             this.Load += new System.EventHandler(this.FinishForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
